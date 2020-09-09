@@ -7,11 +7,16 @@ class AnalogClock {
         Scanner scanner = new Scanner(System.in);
 
         //Reads ints from user
+        int Input = scanner.nextInt();
 
+        //your code goes here
+        int minuteHand = Input * 12;
+        while(minuteHand > 360)
+        {
+          minuteHand = minuteHand - 360;
+        }//ends the while loop
 
-        /*
-         *  your code goes here
-         */
+        System.out.print(minuteHand);
 
         // closing the scanner object
         scanner.close();
